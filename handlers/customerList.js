@@ -25,7 +25,7 @@ const customerListHandler = (req, res) => {
     } = location;
     data[i - start] = {
       id: customers[i].id,
-      name: `${name.title} ${name.first} ${name.last}`,
+      name: `${name.first} ${name.last}`,
       title: name.title,
       address: `${number} ${_name}, ${city}, ${state}, ${country}, ${postcode}`,
       pictures: Object.values(picture),
