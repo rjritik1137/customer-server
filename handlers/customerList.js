@@ -2,7 +2,6 @@ const customers = require("../processed.json");
 const pageSize = 30;
 const customerListHandler = (req, res) => {
   const query = req.query;
-  console.log(query);
   const dataSetLength = customers.length;
   const { page } = query;
   let pageNumber = parseInt(page | "0");
